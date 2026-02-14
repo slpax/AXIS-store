@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIS - Login / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">AXIS</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html" class="about-btn">ABOUT</a></li>
+                    <a href="index.html" class="login-btn">LOGIN</a>
+                    
+                    <li>
+                        <a href="cart.html" class="cart-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="axis-cart-icon">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            
+            <div class="auth-switch">
+                <button id="show-login-btn" class="active">LOGIN</button>
+                <button id="show-signup-btn">SIGN UP</button>
+            </div>
+
+            <div id="login-form-container" class="auth-form active-form">
+                <h2>Welcome Back</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="login-btn-down">LOGIN</button>
+                    <p class="auth-message" id="login-message"></p>
+                </form>
+            </div>
+
+            <div id="signup-form-container" class="auth-form hidden-form">
+                <h2>Create Account</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">SIGN UP</button>
+                    <p class="auth-message" id="signup-message"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <p>&copy; 2025 AXIS Store. Authentication Demo.</p>
+        </div>
+    </footer>
+    
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIS - The Shop</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="shop.html">AXIS</a></div>
+            <nav class="main-nav">
+                <ul>
+                    
+                    <li><a href="about.html" class="about-btn">ABOUT</a></li>
+                    
+                    <li><a href="index.html" class="login-btn">LOGIN</a></li>
+                    
+                    <li>
+                         <a href="cart.html" class="cart-link">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="axis-cart-icon" color="black">
+                              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                 <line x1="3" y1="6" x2="21" y2="6"></line>
+                             <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        <span class="cart-count" style="color: black;">0</span>
+                         </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>AXIS: WHERE<br>EVERYTHING BEGINS.</h1>
+        </div>
+    </section>
+
+    <section class="product-grid" id="product-grid">
+        <div class="product-item" data-product-name="THE CORE HOODIE - BLACK" data-product-price="120.00" data-image="clothes/black_b.jpg" data-product-id="black-hoodie">
+            <img src="clothes/black_b.jpg" alt="Black Core Hoodie">
+            <a href="#"><p class="name">THE CORE HOODIE - BLACK</p></a>
+            
+            <div class="product-details">
+                <p class="price">EURO 120.00</p>
+                
+                <div class="size-selector-container">
+                    <label for="size-black">Size:</label>
+                    <select id="size-black" class="product-size-select">
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="S">Small (S)</option>
+                        <option value="M">Medium (M)</option>
+                        <option value="L">Large (L)</option>
+                        <option value="XL">Extra Large (XL)</option>
+                    </select>
+                </div>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+        
+        <div class="product-item" data-product-name="THE CORE HOODIE - WHITE" data-product-price="120.00" data-image="clothes/white_f.jpg" data-product-id="white-hoodie">
+            <img src="clothes/white_f.jpg" alt="White Core Hoodie">
+            <p class="name">THE CORE HOODIE - WHITE</p>
+            
+            <div class="product-details">
+                <p class="price">EURO 120.00</p>
+                
+                <div class="size-selector-container">
+                    <label for="size-white">Size:</label>
+                    <select id="size-white" class="product-size-select">
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="S">Small (S)</option>
+                        <option value="M">Medium (M)</option>
+                        <option value="L">Large (L)</option>
+                        <option value="XL">Extra Large (XL)</option>
+                    </select>
+                </div>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+        
+        <div class="product-item" data-product-name="THE CORE HOODIE - GREY" data-product-price="120.00" data-image="clothes/grey_f.jpg" data-product-id="grey-hoodie">
+            <img src="clothes/grey_f.jpg" alt="Grey Core Hoodie">
+            <p class="name">THE CORE HOODIE - GREY</p>
+            
+            <div class="product-details">
+                <p class="price">EURO 120.00</p>
+                
+                <div class="size-selector-container">
+                    <label for="size-grey">Size:</label>
+                    <select id="size-grey" class="product-size-select">
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="S">Small (S)</option>
+                        <option value="M">Medium (M)</option>
+                        <option value="L">Large (L)</option>
+                        <option value="XL">Extra Large (XL)</option>
+                    </select>
+                </div>
+            </div>
+            <button class="add-to-cart-btn">ADD TO CART</button>
+        </div>
+    </section>
+
+    <section class="feature-packaging">
+        <div class="packaging-content-wrapper">
+            <div class="packaging-image">
+                <img src="placeholder-packaged.jpg" alt="Beautifully packaged black hoodie">
+            </div>
+            <div class="packaging-text">
+                <h2>THE ART OF PACKAGING</h2>
+                <p>YOUR ORDER ARRIVES IN A BEAUTIFULLY CRAFTED, SUSTAINABLE AXIS BOX. ALONG WITH A PERSONALISED NOTE, EXPERIENCE THE UNBOXING.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <p>&copy; 2025 AXIS Store. Unacheated lacumenus</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

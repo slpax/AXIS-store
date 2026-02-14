@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIS - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">AXIS</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html" class="login-btn">SHOP</a></li>
+                    <li><a href="about.html" class="about-btn">ABOUT</a></li>
+                    <li><a href="index.html" class="login-btn">LOGIN</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="axis-cart-icon">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart-page-section">
+        <div class="cart-container">
+            <h1>SHOPPING CART</h1>
+            
+            <div id="cart-items-container">
+                </div>
+
+            <div class="cart-summary">
+                <p class="summary-line">Subtotal: <span id="cart-subtotal">EURO 0.00</span></p>
+                 <a href="checkout.html" class="checkout-btn" style="border-radius:  5px;">PROCEED TO CHECKOUT</a>
+                
+                <a href="index.html" class="continue-shopping">← Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <p style="margin-top: 120px;">&copy; 2025 AXIS Store. Unacheated lacumenus</p>
+        </div>
+    </footer>
+    
+    <script src="cart.js"></script>
+    
+
+</body>
+</html>
