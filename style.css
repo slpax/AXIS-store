@@ -133,11 +133,35 @@ a {
     padding: 0 20px;
 }
 
+
+
+/* Container needs to be relative so the badge stays inside */
 .product-item {
+    position: relative;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+
+     width: 100%;
     text-align: center;
     padding: 15px;
     border: 1px solid transparent; 
     transition: all 0.3s;
+}
+
+/* The Badge Style */
+.best-seller-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #000; /* Black background for luxury look */
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 10;
 }
 
 /* Hover Effect 2: Product Item Box Shadow */
@@ -148,11 +172,30 @@ a {
 }
 
 .product-item img {
+    width: 100%;            
+    height: 380px;         
+    object-fit: cover;      
+    object-position: top;   
+    margin-bottom: 20px;
+    background-color: #fff;
+    
+    mix-blend-mode: multiply; 
+
+
     width: 100%;
-    height: auto;
+    height: 380px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+/* This ensures your Best Seller images match your other product images */
+.best-img {
+    width: 100%;
+    height: 400px; /* Or whatever height you are using for the rest */
+    object-fit: cover;
     display: block;
     margin-bottom: 15px;
-    object-fit: cover;
 }
 
 .product-item .name {
@@ -841,3 +884,88 @@ a {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
+
+/* logo */
+    .logo img {
+        height: 300px;
+        width: auto;
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+        border-radius: 50px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 100px;
+
+        mix-blend-mode: multiply;
+        filter: contrast(110%) brightness(1.05);
+    }
+
+
+    /* reviwes */
+
+    .ticker-content {
+        display: flex;
+        white-space: nowrap;
+
+        animation: marquee-right 25s linear infinite;
+    }
+
+    .ticker-content span {
+        font-size: 0.9em;
+        color: #666;
+        font-weight: 500;
+        font-family: 'Helvetica Neue', Arial, 'Cairo', sans-serif;;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        padding: 0 10px;
+    }
+
+    @keyframes marquee-right {
+        0% { transform: translateX(-50%);}
+        100% {transform: translateX(0%);}
+      }
+
+      /* Fake comments */
+
+      .rev-card {
+        background: #fff;
+        border: 1px solid var(--accent-color);
+        padding: 25px;
+        margin: 0 10px;
+        
+        text-align: center;
+
+
+        display: inline-block;
+        vertical-align: middle;
+
+        border-radius: 10px;
+      }
+
+      .star {
+        color: rgb(255, 217, 0);
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        
+      }
+
+      .rev-card p {
+        font-size: 1em;
+        color: #333;
+        font-family: 'Helvetica Neue', Arial, 'Cairo', sans-serif;
+        margin-bottom: 10px;
+
+      }
+
+      .rev-card span {
+        font-size: 0.8em;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+

@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIS - The Shop</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
 
     <header class="main-header">
         <div class="header-container">
-            <div class="logo"><a href="shop.html">AXIS</a></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="clothes/Gemini_Generated.png" alt="AXIS" >
+                </a>
+            </div>
             <nav class="main-nav">
                 <ul>
-                    
                     <li><a href="about.html" class="about-btn">ABOUT</a></li>
-                    
                     <li><a href="index.html" class="login-btn">LOGIN</a></li>
-                    
                     <li>
                          <a href="cart.html" class="cart-link">
                              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="axis-cart-icon" color="black">
                               <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                                 <line x1="3" y1="6" x2="21" y2="6"></line>
-                             <path d="M16 10a4 4 0 0 1-8 0"></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
                             </svg>
                         <span class="cart-count" style="color: black;">0</span>
                          </a>
@@ -40,85 +41,162 @@
     </section>
 
     <section class="product-grid" id="product-grid">
-        <div class="product-item" data-product-name="THE CORE HOODIE - BLACK" data-product-price="120.00" data-image="clothes/black_b.jpg" data-product-id="black-hoodie">
-            <img src="clothes/black_b.jpg" alt="Black Core Hoodie">
-            <a href="#"><p class="name">THE CORE HOODIE - BLACK</p></a>
-            
-            <div class="product-details">
-                <p class="price">EURO 120.00</p>
-                
-                <div class="size-selector-container">
-                    <label for="size-black">Size:</label>
-                    <select id="size-black" class="product-size-select">
-                        <option value="" disabled selected>Select Size</option>
-                        <option value="S">Small (S)</option>
-                        <option value="M">Medium (M)</option>
-                        <option value="L">Large (L)</option>
-                        <option value="XL">Extra Large (XL)</option>
-                    </select>
-                </div>
-            </div>
-            <button class="add-to-cart-btn">ADD TO CART</button>
+    <div class="product-item" data-product-id="axis-01-grey" data-product-name="THE CORE - WOMENS GREY" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.52 PM.jpeg">
+        <div class="best-seller-badge">BEST SELLER</div>
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.08.52 PM.jpeg" class="product-img" alt="Womens Grey Hoodie">
+        <p class="name">THE CORE - WOMENS GREY</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
         </div>
-        
-        <div class="product-item" data-product-name="THE CORE HOODIE - WHITE" data-product-price="120.00" data-image="clothes/white_f.jpg" data-product-id="white-hoodie">
-            <img src="clothes/white_f.jpg" alt="White Core Hoodie">
-            <p class="name">THE CORE HOODIE - WHITE</p>
-            
-            <div class="product-details">
-                <p class="price">EURO 120.00</p>
-                
-                <div class="size-selector-container">
-                    <label for="size-white">Size:</label>
-                    <select id="size-white" class="product-size-select">
-                        <option value="" disabled selected>Select Size</option>
-                        <option value="S">Small (S)</option>
-                        <option value="M">Medium (M)</option>
-                        <option value="L">Large (L)</option>
-                        <option value="XL">Extra Large (XL)</option>
-                    </select>
-                </div>
-            </div>
-            <button class="add-to-cart-btn">ADD TO CART</button>
-        </div>
-        
-        <div class="product-item" data-product-name="THE CORE HOODIE - GREY" data-product-price="120.00" data-image="clothes/grey_f.jpg" data-product-id="grey-hoodie">
-            <img src="clothes/grey_f.jpg" alt="Grey Core Hoodie">
-            <p class="name">THE CORE HOODIE - GREY</p>
-            
-            <div class="product-details">
-                <p class="price">EURO 120.00</p>
-                
-                <div class="size-selector-container">
-                    <label for="size-grey">Size:</label>
-                    <select id="size-grey" class="product-size-select">
-                        <option value="" disabled selected>Select Size</option>
-                        <option value="S">Small (S)</option>
-                        <option value="M">Medium (M)</option>
-                        <option value="L">Large (L)</option>
-                        <option value="XL">Extra Large (XL)</option>
-                    </select>
-                </div>
-            </div>
-            <button class="add-to-cart-btn">ADD TO CART</button>
-        </div>
-    </section>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
 
-    <section class="feature-packaging">
-        <div class="packaging-content-wrapper">
-            <div class="packaging-image">
-                <img src="placeholder-packaged.jpg" alt="Beautifully packaged black hoodie">
-            </div>
-            <div class="packaging-text">
-                <h2>THE ART OF PACKAGING</h2>
-                <p>YOUR ORDER ARRIVES IN A BEAUTIFULLY CRAFTED, SUSTAINABLE AXIS BOX. ALONG WITH A PERSONALISED NOTE, EXPERIENCE THE UNBOXING.</p>
+    <div class="product-item" data-product-id="axis-02-white" data-product-name="THE CORE - OPTIC WHITE" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.09.11 PM.jpeg">
+        <div class="best-seller-badge">BEST SELLER</div>
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.09.11 PM.jpeg" class="product-img" alt="Optic White Hoodie">
+        <p class="name">THE CORE - OPTIC WHITE</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product-item" data-product-id="axis-03-black" data-product-name="THE CORE - MENS BLACK" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.20 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.08.20 PM.jpeg" class="product-img" alt="Mens Black Hoodie">
+        <p class="name">THE CORE - MENS BLACK</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product-item" data-product-id="axis-04-signature" data-product-name="SIGNATURE LOGO HOODIE" data-product-price="130.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.28 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.09.18 PM.jpeg" class="product-img" alt="Signature Hoodie">
+        <p class="name">SIGNATURE LOGO HOODIE</p>
+        <div class="product-details">
+            <p class="price">EURO 130.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+
+    
+    <div class="product-item" data-product-id="black-mens-01" data-product-name="THE CORE - MENS BLACK" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.20 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.08.20 PM.jpeg" alt="Mens Black Hoodie">
+        <p class="name">THE CORE - MENS BLACK</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product-item" data-product-id="grey-womens-02" data-product-name="THE CORE - WOMENS GREY" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.52 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.08.52 PM.jpeg" alt="Womens Grey Hoodie">
+        <p class="name">THE CORE - WOMENS GREY</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product-item" data-product-id="white-optic-03" data-product-name="THE CORE - OPTIC WHITE" data-product-price="120.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.09.11 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.09.11 PM.jpeg" alt="Optic White Hoodie">
+        <p class="name">THE CORE - OPTIC WHITE</p>
+        <div class="product-details">
+            <p class="price">EURO 120.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product-item" data-product-id="signature-logo-04" data-product-name="SIGNATURE LOGO HOODIE" data-product-price="130.00" data-image="clothes/WhatsApp Image 2026-02-04 at 11.08.28 PM.jpeg">
+        <img src="clothes/WhatsApp Image 2026-02-04 at 11.09.18 PM.jpeg" alt="Signature Hoodie">
+        <p class="name">SIGNATURE LOGO HOODIE</p>
+        <div class="product-details">
+            <p class="price">EURO 130.00</p>
+            <select class="product-size-select">
+                <option value="" disabled selected>Select Size</option>
+                <option value="S">S</option><option value="M">M</option><option value="L">L</option>
+            </select>
+        </div>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+</section>
+
+
+
+    <section class="rev-ticket">
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <div class="rev-card">
+                     <div class="star">★★★★★</div>
+                     <p>"Incredible attention to detail. The minimalist vibe is 10/10."</p>
+                    <span> - Lebron James</span>
+                </div>
+                <div class="rev-card">
+                    <div class="star">★★★★★</div>
+                    <p>Luxury feel at a fair price.</p>
+                    <span> -Jana I</span>
+                </div>
+                <div class="rev-card">
+                    <div class="star">★★★★★</div>
+                    <p>The quality of the Core Hoodie is unmatched.</p>
+                    <span> - Malik I.</span>
+                </div>
+                <div class="rev-card">
+                    <div class="star">★★★★★</div>
+                    <p>Best minimalist brand I've found this year</p>
+                    <span> - Sarah K.</span>
+                </div>
+                <div class="rev-card">
+                    <div class="star">★★★★★</div>
+                    <p>Fast shipping to Dammam and great packaging.</p>
+                    <span> - Omar F.</span>
+                </div>
+                <div class="rev-card">
+                     <div class="star">★★★★★</div>
+                    <p>"Perfect fit. Definitely my new favorite hoodie."</p>
+                     <span> - Sofia R.</span>
+                </div>
+                <div class="rev-card">
+                    <div class="star">★★★★★</div>
+                    <p>"Incredible attention to detail. The minimalist vibe is 10/10."</p>
+                   <span> - Lebron James</span>
+               </div>
             </div>
         </div>
     </section>
 
     <footer class="main-footer">
         <div class="footer-links">
-            <p>&copy; 2025 AXIS Store. Unacheated lacumenus</p>
+            <p>&copy; 2026 AXIS Store. All Rights Reserved.</p>
         </div>
     </footer>
     

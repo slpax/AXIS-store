@@ -52,22 +52,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const price = parseFloat(item.price) || 0;
             const itemTotal = (price * item.quantity).toFixed(2);
 
-            itemElement.innerHTML = `
-                <div class="item-info">
-                    <img src="${item.image}" alt="${item.name}" style="width: 80px;">
-                    <div>
-                        <p><strong>${item.name}</strong></p>
-                        <p>Size: ${item.size}</p>
-                        <p>Price: EURO ${price.toFixed(2)}</p>
-                    </div>
-                </div>
-                <div class="item-controls">
-                    <button class="qty-btn minus" data-id="${item.id}" data-size="${item.size}">-</button>
-                    <span>${item.quantity}</span>
-                    <button class="qty-btn plus" data-id="${item.id}" data-size="${item.size}">+</button>
-                    <p>Total: EURO ${itemTotal}</p>
-                </div>
-            `;
+            // Inside your cart.forEach(item => { ... }) loop:
+itemElement.innerHTML = `
+    <div class="item-info">
+        <img src="${item.image}" alt="${item.name}" style="width: 80px;">
+        <div>
+            <p><strong>${item.name}</strong></p>
+            <p>Size: ${item.size}</p>
+            <p>Price: EURO ${price.toFixed(2)}</p>
+        </div>
+    </div>
+    <div class="item-controls">
+        <button class="qty-btn minus" data-id="${item.id}">-</button>
+        <span>${item.quantity}</span>
+        <button class="qty-btn plus" data-id="${item.id}">+</button>
+        <p>Total: EURO ${itemTotal}</p>
+    </div>
+`;
             cartItemsContainer.appendChild(itemElement);
         });
 
@@ -76,31 +77,35 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // This handles the plus and minus button clicks
+    // This handles the plus and minus button clicks
     const setupButtons = () => {
         document.querySelectorAll('.qty-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const id = e.target.dataset.id;
-                const size = e.target.dataset.size;
+                // IMPORTANT: We only need the ID now because it already contains the size
+                const uniqueId = e.target.dataset.id;
                 let cart = loadCart();
-                const item = cart.find(i => i.id === id && i.size === size);
+                
+                // Find the item using ONLY the unique ID
+                const item = cart.find(i => i.id === uniqueId);
 
                 if (item) {
                     if (e.target.classList.contains('plus')) {
-                        item.quantity++; // Add one
+                        item.quantity++; 
                     } else {
-                        item.quantity--; // Remove one
+                        item.quantity--; 
                         if (item.quantity < 1) {
-                            // If it's less than 1, remove it from the cart
-                            cart = cart.filter(i => !(i.id === id && i.size === size));
+                            // Filter out the item by its unique ID
+                            cart = cart.filter(i => i.id !== uniqueId);
                         }
                     }
                 }
 
                 saveCart(cart); 
-                renderCart(); // Refresh the page to show new numbers
+                renderCart(); // Refresh the numbers
             });
         });
     };
-
-    renderCart(); // Run everything when the page loads
-});
+    
+        // Initial render
+        renderCart();
+    });
