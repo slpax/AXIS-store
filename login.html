@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AXIS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the login layout */
+        .login-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h1 {
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .form-footer a {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="clothes/Gemini_Generated.png" alt="AXIS">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <h1>LOGIN</h1>
+            <form id="login-form" class="auth-form" action="shop.html">
+                <div class="form-group">
+                    <label for="email" style="display: none;">Email</label>
+                    <input type="email" id="email" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" style="display: none;">Password</label>
+                    <input type="password" id="password" placeholder="PASSWORD" required>
+                </div>
+                <button type="submit" class="checkout-btn">ENTER</button>
+            </form>
+            
+            <div class="form-footer">
+                <p>New to AXIS? <a href="#">Create Account</a></p>
+                <p><a href="#">Forgot Password?</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <p>&copy; 2026 AXIS Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
