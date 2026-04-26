@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 0);
         
         // Show the total next to "Subtotal:"
-        cartSubtotalElement.textContent = `EURO ${subtotal.toFixed(2)}`;
+        cartSubtotalElement.textContent = `SAR ${subtotal.toFixed(2)}`;
         return subtotal;
     };
 
@@ -59,14 +59,14 @@ itemElement.innerHTML = `
         <div>
             <p><strong>${item.name}</strong></p>
             <p>Size: ${item.size}</p>
-            <p>Price: EURO ${price.toFixed(2)}</p>
+            <p>Price: SAR ${price.toFixed(2)}</p>
         </div>
     </div>
     <div class="item-controls">
         <button class="qty-btn minus" data-id="${item.id}">-</button>
         <span>${item.quantity}</span>
         <button class="qty-btn plus" data-id="${item.id}">+</button>
-        <p>Total: EURO ${itemTotal}</p>
+        <p>Total: SAR ${itemTotal}</p>
     </div>
 `;
             cartItemsContainer.appendChild(itemElement);
